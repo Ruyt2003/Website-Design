@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    /* 父元素使用相对定位 */
+    position: relative;
+}
+
+/* 导航栏样式 */
+.navigation {
+    width: 100vw;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    margin-bottom: 50px;
+}
+
+.navigation img {
+    width: 100vw;
+}
+
+/* 装饰条 */
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #db261f;
+}
+
+/* 导航条样式 */
+.navCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+/* 网页标题 */
+.title {
+    width: 25vw;
+    height: 50px;
+    background-color: #db261f;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* 导航条菜单栏 */
+.bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+/* 导航条选项 */
+.item {
+    width: 180px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.item a {
+    color: #858585;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.item a:hover {
+    color: #db261f;
+    font-weight: bold;
+}
+
+
+/* 返回顶部按钮样式 */
+.back {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.back a {
+    color: #db261f;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.back a:hover {
+    color: #ffbb00;
+    font-weight: bold;
+}
+
+/* 主要内容部分大容器样式 */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* 图文介绍部分大容器样式 */
+.content {
+    width: 70vw;
+    padding: 0 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+/* 图文介绍部分共用样式 */
+.introduce {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 30px;
+}
+
+/* 图文介绍部分标题样式 */
+.important {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #db261f;
+    margin-bottom: 15px;
+}
+
+/* 引入部分图片样式 */
+#import img {
+    width: 600px;
+    height: 359px;
+    margin: auto 0px;
+}
+
+/* 引入部分文本样式 */
+#import .text {
+    margin-right: 20px;
+    line-height: 27px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 组织架构部分大容器样式 */
+#organization {
+    margin-top: 30px;
+}
+
+/* 组织架构部分图片样式 */
+#organization img {
+    height: 560px;
+    margin: auto 0px;
+}
+
+/* 组织架构部分文本样式 */
+#organization .text {
+    margin-left: 20px;
+    line-height: 27px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 侧边通知栏大容器样式 */
+.sideBar {
+    width: 30vw;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    border-left: 1px solid #858585;
+    padding: 0 20px;
+}
+
+/* 侧边通知栏标题样式 */
+.headline {
+    width: 100vw;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.shortline {
+    width: 100%;
+    height: 2px;
+    background-color: #db261f;
+    position: absolute;
+    top: 14px;
+}
+
+.caption {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #db261f;
+    background-color: #fff;
+    position: absolute;
+    left: 30px;
+}
+
+.notice {
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.news {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.notice img {
+    width: 230px;
+    height: 138px;
+    margin-right: 15px;
+}
+
+.notice p {
+    width: 150px;
+    white-space: pre-wrap;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.details {
+    color: #858585;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.details a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffbb00;
+}
+
+.details a:hover {
+    color: #db261f;
+}
+
+
+/* 脚注样式 */
+.footer {
+    margin-top: 50px;
+    color: rgb(231, 231, 231);
+    width:100%;
+    height:90px;
+    line-height:90px;
+    text-align:center;
+    font-family: "Adobe 宋体 Std L";
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
